@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.expenxefrontend.ExpenseListController">
+   <children>
+      <Label layoutX="7.0" layoutY="6.0" prefHeight="49.0" prefWidth="593.0" text="\$pend">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="newButton" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="105.0" text="New" />
+      <Button fx:id="home" contentDisplay="BOTTOM" layoutX="76.0" layoutY="539.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="112.0" text="Home" />
+      <Button fx:id="spend" layoutX="225.0" layoutY="539.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="112.0" text="Spend" />
+      <VBox layoutX="18.0" layoutY="127.0" prefHeight="82.0" prefWidth="419.0">
+         <children>
+            <TextField fx:id="description" prefHeight="24.0" prefWidth="430.0" text="Description" />
+            <TextField fx:id="date" prefHeight="25.0" prefWidth="405.0" text="Date" />
+            <TextField fx:id="amount" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="430.0" text="Amount" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
